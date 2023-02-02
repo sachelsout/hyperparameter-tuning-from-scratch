@@ -14,3 +14,12 @@ Cross Validation is a technique in which ML models are trained on the subset of 
 
 ![image](https://user-images.githubusercontent.com/86348193/216340946-c1dcc9dd-d52b-4df1-ad19-f957a9c49b97.png) <br>
 In this method,the data-set is split into k number of subsets(known as folds). All the subsets/folds of data are trained except 1 which is (k-1) fold/subset which is considered for the evaluation of the trained model. In this method, we iterate k times with a different subset reserved for testing purpose each time.<br>
+<h1>Hyperparameter Tuning techniques</h1>
+
+![image](https://user-images.githubusercontent.com/86348193/216359644-cda4dcc4-7b50-4932-8e30-6f4188d5609f.png) <br>
+
+There are different techniques to perform hyperparameter tuning. The techniques implemented in this project are RandomSearchCV and GridSearchCV.<br>
+<h3>1. RandomSearchCV</h3>
+In Random Search Cross Validation technique, the hyperparameter values are selected randomly from a given range. This technique is computationally more optimized way of selecting hyperparameters compared to GridSearchCV.<br>
+<h3>2. GridSearchCV</h3>
+In Grid Search Cross Validation technique, all the possible parameters combinations are taken into consideration, which makes it computationally more expensive than Random Search CV. Benefit however is that if you run it on a broad parameter space you will get the "best" parameter settings possible.
